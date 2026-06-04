@@ -2,4 +2,4 @@
   hosts: node
   tasks:
     - name: ping the the frontend server
-      ping: #ansible.builtin.ping
+      ping: ansible.builtin.ping
