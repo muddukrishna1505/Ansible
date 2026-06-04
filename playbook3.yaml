@@ -3,5 +3,6 @@
   tasks:
     - name: installing nginx
       package:
+        become: yes
         name: nginx
         state: installed
