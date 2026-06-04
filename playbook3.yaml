@@ -1,8 +1,10 @@
 - name: install nginx
   hosts: node
+  become: yes
   tasks:
-    - name: installing nginx
-      package:
-        become: yes
+    - name: installing nginx on Rhel
+      ansible.builtin.dnf:
         name: nginx
-        state: installed
+        state: present
+
+        
