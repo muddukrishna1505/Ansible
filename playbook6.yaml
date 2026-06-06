@@ -1,0 +1,16 @@
+---
+- name: printing username name and password using read
+  hosts: localhost
+  connection: local
+  vars_prompt:
+  - name: "username"
+    prompt: "Enter your username"
+    private: false
+    
+  - name: "password"
+    prompt: "Enter your password"
+    private: true
+  tasks:
+  - name: printing the username and password
+    debug:
+      msg: "The username is {{ username }} and the password is {{ password }}."
