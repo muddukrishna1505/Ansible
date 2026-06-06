@@ -2,8 +2,8 @@
 - name: printing variables
   hosts: localhost
   connection: local
-  vars_files:
-  - course.yaml
+  vars_files:  # include the variables from the course.yaml file
+  - course.yaml #course.yaml should be as a list item under vars_files
   tasks:
   - name: printing the var info
     debug:
