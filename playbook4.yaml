@@ -11,7 +11,7 @@
   - name: printing the var info
     vars:
       course: DevOps+AIOps
-    debug:
+    ansible.builtin.debug:
       msg: |
         {{ learner }} is learninng {{ course }} under guidance of {{ trainer }}
         See Task level variable overwrites the play level variable.
