@@ -9,8 +9,9 @@
 
   tasks:
   - name: printing the var info
-    course: DevOps+AIOps
+    vars:
+      course: DevOps+AIOps
     debug:
       msg: "{{ learner }} is learninng {{ course }} under guidance of {{ trainer }}"
-      
+
      
