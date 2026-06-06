@@ -13,4 +13,6 @@
   tasks:
   - name: printing the username and password
     debug:
-      msg: "The username is {{ username }} and the password is ********"
+      msg: "The username is {{ username }} and the password is {{ password }}"
+      #msg: "The username is {{ username }} and the password is ********" #This is a common practice to avoid displaying sensitive information like passwords in logs or output. By replacing the actual password with asterisks (********), you can prevent unauthorized access to the password while still indicating that it has been entered.
+      
