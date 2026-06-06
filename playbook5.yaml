@@ -3,10 +3,10 @@
   hosts: localhost
   connection: local
   vars:
-    course.yaml
+  - course.yaml
   tasks:
   - name: printing the var info
     debug:
-      msg: " {{ learner }} is learning {{ couse }} under guidance of {{ trainer }}."
+      msg: " {{ learner }} is learning {{ course }} under guidance of {{ trainer }}."
       
     
