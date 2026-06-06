@@ -2,7 +2,7 @@
 - name: printing variables
   hosts: localhost
   connection: local
-  vars:
+  vars_files:
   - course.yaml
   tasks:
   - name: printing the var info
