@@ -1,0 +1,16 @@
+---
+- name: Printing info using and play level vars and task level vars
+  hosts: node
+  connection: local
+  vars:
+    learner: Muddukrishna
+    course: DevOps
+    trainer: siva kumar
+
+  tasks:
+  - name: printing the var info
+    course: DevOps+AIOps
+    debug:
+      msg: "{{ learner }} is learninng {{ course }} under guidance of {{ trainer }}"
+      
+     
