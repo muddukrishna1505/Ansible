@@ -1,6 +1,6 @@
 ---
 - name: printing variables
-  hosts: localhost
+  hosts: localhost #localhost is a special inventory name that refers to the local machine where the playbook is being executed.
   connection: local
   vars_files:  # include the variables from the course.yaml file
   - course.yaml #course.yaml should be as a list item under vars_files
