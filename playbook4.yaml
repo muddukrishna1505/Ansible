@@ -1,6 +1,6 @@
 ---
 - name: Printing info using play level vars and task level vars
-  hosts: node
+  hosts: localhost
   connection: local
   vars:
     learner: Muddukrishna
