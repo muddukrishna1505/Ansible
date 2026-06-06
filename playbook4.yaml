@@ -12,6 +12,10 @@
     vars:
       course: DevOps+AIOps
     debug:
-      msg: "{{ learner }} is learninng {{ course }} under guidance of {{ trainer }}\nSee Task level variable overites the play level variable\nTask level won."
+      msg: |
+        {{ learner }} is learninng {{ course }} under guidance of {{ trainer }}
+        See Task level variable overwrites the play level variable.
+        Task level won.
+
 
      
