@@ -1,5 +1,5 @@
 ---
-- name: Printing info using and play level vars and task level vars
+- name: Printing info using play level vars and task level vars
   hosts: node
   connection: local
   vars:
@@ -12,6 +12,6 @@
     vars:
       course: DevOps+AIOps
     debug:
-      msg: "{{ learner }} is learninng {{ course }} under guidance of {{ trainer }}"
+      msg: "{{ learner }} is learninng {{ course }} under guidance of {{ trainer }}\nSee Task level variable overites the play level variable\nTask level won."
 
      
