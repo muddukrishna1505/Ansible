@@ -1,0 +1,12 @@
+---
+- name: printing variables
+  hosts: localhost
+  connection: local
+  vars:
+    course.yaml
+  tasks:
+  - name: printing the var info
+    debug:
+      msg: " {{ learner }} is learning {{ couse }} under guidance of {{ trainer }}."
+      
+    
