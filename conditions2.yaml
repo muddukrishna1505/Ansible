@@ -5,7 +5,7 @@
     number: 15
   tasks:
   - name: Number is even
-    when: numer % 2 == 0
+    when: number % 2 == 0
     debug:
       msg: "The number {{ number}} is even number"
 
@@ -13,4 +13,3 @@
     when: number % 2 != 0
     debug:
       msg: "The number {{ number }} is odd number"   
-         
