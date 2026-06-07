@@ -1,11 +1,11 @@
 ---
 - name: Check server uptime
-  hosts: node
+  hosts: frontend
   tasks:
   - name: checking uptime
     command: uptime
     register: uptime_output # register keyword is used to store the output of the command in a variable called uptime_output. This allows you to access and use the output later in the playbook, such as for debugging or further processing.
-  - name: save uptime to file
+  - name: copying the uptime output to a file to remote server
     copy:
       content: "{{ uptime_output.stdout }}"
       dest: /tmp/uptime.txt

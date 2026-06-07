@@ -1,5 +1,5 @@
 - name: Demo on vars in inventory file
-  hosts: node
+  hosts: frontend
   #connection: local
   tasks:
   - name: printing the variable using inventory file
