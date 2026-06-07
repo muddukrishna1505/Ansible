@@ -1,0 +1,11 @@
+- name: letters change to uppercase
+  hosts: local
+  connection: local
+
+  vars:
+    full_name: Muddukrishna Bellamkonda
+
+  tasks:
+  - name: name converting to uppercase
+    debug:
+      msg: "{{ full_name | upper }}"
