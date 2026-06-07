@@ -4,6 +4,7 @@
 
   vars:
     full_name: Muddukrishna Bellamkonda
+    ip_address: 172.33.45.56
 
   tasks:
   - name: name converting to uppercase
@@ -12,4 +13,8 @@
 
   - name: name converting to lowercase
     debug:
-      msg: "{{ full_name | lower }}"    
+      msg: "{{ full_name | lower }}"   
+
+  - name: check ipv4 address
+    debug:
+      msg: "{{ ip_address | ansible.utils.ipv4 }}"    
