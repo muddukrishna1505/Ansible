@@ -9,3 +9,7 @@
   - name: name converting to uppercase
     debug:
       msg: "{{ full_name | upper }}"
+
+  - name: name converting to lowercase
+    debug:
+      msg: "{{ full_name | lower }}"    
