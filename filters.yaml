@@ -6,4 +6,5 @@
   - name: making list
     debug:
       msg: "{{ topics | (',') }}"
+      
 
