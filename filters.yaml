@@ -6,6 +6,6 @@
   tasks:
   - name: making list
     debug:
-      msg: "{{ topics | (',') }}"
+      msg: "{{ topics | split (',') }}"
       
 
