@@ -4,6 +4,6 @@
   tasks:
   - name: Defining variable in cmd line
     debug: 
-      msg: " {{ NAME | default Hi ('Muddukrishna') }}" 
+      msg: " {{ NAME | default ('Hi') ('Muddukrishna') }}" 
 
 #NAME Variable is not declared under vars, directly giving     
