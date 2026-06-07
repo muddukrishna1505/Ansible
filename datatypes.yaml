@@ -6,10 +6,10 @@
     duration_in_mins: 120 #integer/number
     is_release: true #boolean
     languages: ["english", "hindi", "kannada"]
-  more_info:
-    hero: Ram Charan 
-    heroine: Janvi kapoor
-    director: Buchi babu 
+    more_info:
+      hero: "Ram Charan"
+      heroine: "Janvi kapoor"
+      director: "Buchi babu"
 
   tasks:
   - name: printing the peddi movie info
