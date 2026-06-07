@@ -16,7 +16,7 @@
       }
     ]
   tasks:
-  - name: converting list to dictionary  
+  - name: converting list to map 
     debug:
       msg: "{{ tags_list | items2dict}}"  
 

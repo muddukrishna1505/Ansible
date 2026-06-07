@@ -12,4 +12,5 @@
     debug: 
       msg: "{{ tagmap | dict2items }}"
 
-# dict2items It'll change dictionary to list
+#list==items
+#map==dict
