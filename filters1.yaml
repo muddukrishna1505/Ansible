@@ -1,0 +1,7 @@
+- name: Declaring the variable from the cmd line
+  hosts: local
+  connection: local
+  tasks:
+  - name: Defining variable in cmd line
+    debug: 
+      msg: " {{ NAME | 'NAME=Muddukrishna' }}"
