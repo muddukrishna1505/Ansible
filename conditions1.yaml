@@ -9,3 +9,5 @@
     when: human_heart_beat < 70
     debug:
       msg: "The human heart beat should be more than 70, i.e. {{ human_heart_beat }}"
+
+#This condition is false so we will not get any output for this playbook.      
