@@ -1,0 +1,14 @@
+- name: install packages
+  hosts: frontend
+  become: true
+
+  tasks:
+  - name: installing the packages
+    package:
+      name: " Installing the {{ item }} "
+      state: 
+
+    loop:
+    - nginx
+    - mysql
+    - apache
