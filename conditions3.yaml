@@ -3,7 +3,8 @@
   connection: local
   vars_prompt:
     - name: number
-      prompt: "please enter the number: "
+      prompt: "please enter the number"
+      private: no
       
   tasks:
   - name: Number is even
