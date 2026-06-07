@@ -1,0 +1,18 @@
+- name: peddi mvoie info
+  hosts: local
+  connection: local
+  vars:
+    name: peddi #string
+    duration_in_mins: 120 #integer/number
+    is_release: true #boolean
+    languages: ["english", "hindi", "kannada"]
+  more_info:
+    hero: Ram Charan 
+    heroine: Janvi kapoor
+    director: Buchi babu 
+
+  tasks:
+  - name: printing the peddi movie info
+    debug:
+      msg: "The movie name is {{ name }}, the duration is {{ duration_in_mins }} mins, is it realeased: {{ is_release}}, more info: {{ more_info}}"
+
