@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    name: peddi #string
+    movie: peddi #string
     duration_in_mins: 120 #integer/number
     is_release: yes #boolean
     languages: ["english", "hindi", "kannada"]
@@ -19,5 +19,5 @@
   tasks:
   - name: printing the peddi movie info
     debug:
-      msg: "The movie name is {{ name }}, the duration is {{ duration_in_mins }} mins, is it realeased: {{ is_release}}, what peddi movie contains: {{ movie_contains }}, more info: {{ more_info}}"
+      msg: "The movie name is {{ movie }}, the duration is {{ duration_in_mins }} mins, is it realeased: {{ is_release}}, what peddi movie contains: {{ movie_contains }}, more info: {{ more_info}}"
 
