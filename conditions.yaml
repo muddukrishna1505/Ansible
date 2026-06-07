@@ -7,4 +7,4 @@
   - name: check the movie ticket price
     when: movie_ticket_price > 100
     debug:
-      msg: "Yes, the movies ticket price is more than 100"
+      msg: "Yes, the movies ticket price is more than 100, i.e. {{ movie_ticket_price }}"
