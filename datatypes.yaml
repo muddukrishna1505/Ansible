@@ -4,9 +4,14 @@
   vars:
     name: peddi #string
     duration_in_mins: 120 #integer/number
-    is_release: true #boolean
+    is_release: yes #boolean
     languages: ["english", "hindi", "kannada"]
-    more_info:
+    movie_contains: #list
+      - action
+      - songs & dance
+      - comedy
+      - emotion drama
+    more_info:  #map/dictionary
       hero: "Ram Charan"
       heroine: "Janvi kapoor"
       director: "Buchi babu"
@@ -14,5 +19,5 @@
   tasks:
   - name: printing the peddi movie info
     debug:
-      msg: "The movie name is {{ name }}, the duration is {{ duration_in_mins }} mins, is it realeased: {{ is_release}}, more info: {{ more_info}}"
+      msg: "The movie name is {{ name }}, the duration is {{ duration_in_mins }} mins, is it realeased: {{ is_release}}, what peddi movie contains: {{ movie_contains }}, more info: {{ more_info}}"
 
