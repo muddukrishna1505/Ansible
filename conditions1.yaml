@@ -5,8 +5,7 @@
     human_heart_beat: 72
 
   tasks:
-
-    when: human_haeart_beat < 70
+  - name: check the human heart beat
+    when: human_heart_beat < 70
     debug:
-    - name: printing the infor
       msg: "The human heart beat should be more than 70, i.e. {{ human_heart_beat }}"
