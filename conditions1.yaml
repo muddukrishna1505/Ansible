@@ -1,0 +1,12 @@
+- name: checking the condition
+  hosts: local
+  connection: local
+  vars:
+    human_heart_beat: 72
+
+  tasks:
+  - name: checking the heart beat
+    when: human_haeart_beat < 70
+    debug:
+    - name: printing the infor
+      msg: "The human heart beat should be more than 70, i.e. {{ human_heart_beat }}"
