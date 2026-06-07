@@ -1,7 +1,6 @@
 - name: Check uptime
-  hosts: node
   command: uptime
   register: output
-  tasks:
-  - debug:
-  var: output.stdout
+
+- debug:
+    var: output.stdout
