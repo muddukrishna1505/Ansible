@@ -1,0 +1,21 @@
+- name: Converting list to dictonary
+  hosts: local
+  connection: local
+  vars:
+    tags_list: [{
+       "key": "name",
+       "value": "Ansible"
+      },
+      {
+       "key": "project",
+       "value": "roboshop"
+      },
+      {
+        "key": "environment",
+        "value": "dev"
+      }
+    ]
+  tasks:
+  - name: converting list to dictionary  
+    debug:
+      msg: "{{ tag_list | list2dict}}"  
