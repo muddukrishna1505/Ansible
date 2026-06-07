@@ -18,7 +18,7 @@
   tasks:
   - name: converting list to dictionary  
     debug:
-      msg: "{{ tag_list | items2dict}}"  
+      msg: "{{ tags_list | items2dict}}"  
 
 #list==items
 #map==dict
