@@ -1,0 +1,7 @@
+- name: Demo passing variable without declaring in the playbook
+  hosts: local
+  connection: local
+  tasks:
+  - name: printing the variable without declaring in the playbook
+    debug:
+      msg: "My name is {{ name }}"
