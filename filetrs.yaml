@@ -1,0 +1,9 @@
+- name: About filters concept
+  hosts: local
+  connection: local
+  topics: ansible, shell, terraform, python
+  tasks:
+  - name: making list
+    debug:
+      msg: "{{ topics | (',') }}"
+
