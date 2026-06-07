@@ -1,0 +1,7 @@
+- name: Demo on vars in inventory file
+  hosts: node
+  #connection: local
+  tasks:
+  - name: printing the variable using inventory file
+    debug:
+      msg: "The course name is {{ COURSE }}, the trainer name is {{ TRAINER }} and the batch name is {{ BATCH }}"
