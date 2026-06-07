@@ -1,0 +1,17 @@
+- name: checking the number even or odd
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: number
+      prompt: "please enter the number: "
+      
+  tasks:
+  - name: Number is even
+    when: number % 2 == 0
+    debug:
+      msg: "The number {{ number}} is even number"
+
+  - name: Number is odd
+    when: number % 2 != 0
+    debug:
+      msg: "The number {{ number }} is odd number"   
