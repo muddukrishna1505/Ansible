@@ -10,6 +10,6 @@
   tasks:
   - name: Converting the map to list
     debug: 
-      msg: " {{ tagmap | dict2items | to_nice_yaml }} "
+      msg: " {{ tagmap | dict2items }} "
 
 # dict2items It'll change dictionary to list
