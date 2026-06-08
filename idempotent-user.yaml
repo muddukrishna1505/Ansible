@@ -6,6 +6,7 @@
   - name: create expense user
     user:
       name: krish # useradd expense
+    register: user_output   
   - name: printing the user info
     debug:
-      msg: "{{ name }}"
+      msg: "{{ user_output }}"
