@@ -8,10 +8,10 @@
 
   - name: shell test
     # command: touch > /temp/file2.txt #here special variable '>' is used so command will not, need to shell
-    shell: touch file2.txt > /tmp
+    shell: touch /tmp/file2.txt 
     register: command_output_2
 
-  - name: print bothe the outputs
+  - name: print both the outputs
     debug:  
       msg:
         - "command1 output is {{ command_output_1 }}"
