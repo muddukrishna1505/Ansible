@@ -13,7 +13,7 @@
 
   - name: shell test2
     #command: cat /etc/passwd | grep root
-    shell: cat /etc/passwd | grep root
+    shell: cat /etc/passwd | grep root > file1.txt
     register: users_output
 
   - name: print both the outputs
