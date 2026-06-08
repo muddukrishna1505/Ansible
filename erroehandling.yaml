@@ -1,0 +1,11 @@
+- name: demo on command vs shell
+  hosts: local
+  connection: local
+  tasks:
+  - name: command test
+    command: touch file1.txt
+    register: command_output
+
+  - name: print the command the output
+    debug:  
+      msg: "{{ command_output }}"
