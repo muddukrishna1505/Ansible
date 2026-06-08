@@ -4,8 +4,14 @@
   tasks:
   - name: command test
     command: touch file1.txt
-    register: command_output
+    register: command_output_1
 
-  - name: print the command the output
+  - name: command test with shell env
+    command: touch > /temp/file2.txt
+    register: command_output_2
+
+  - name: print bothe the outputs
     debug:  
-      msg: "{{ command_output }}"
+      msg:
+        - "command1 output is {{ command_output_1 }}"
+        - "command2 output is {{ command_output_2 }}"
