@@ -11,8 +11,14 @@
     shell: touch /tmp/file2.txt 
     register: command_output_2
 
+  - name: shell test2
+    #command: cat /etc/passwd | grep root
+    shell: cat /etc/passwd | grep root
+    register: users_output
+
   - name: print both the outputs
     debug:  
       msg:
         - "command1 output is {{ command_output_1 }}"
         - "command2 output is {{ command_output_2 }}"
+        - "users output is {{ users_output }}"
