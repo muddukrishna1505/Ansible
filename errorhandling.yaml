@@ -8,7 +8,7 @@
 
   - name: shell test
     # command: touch > /temp/file2.txt #here special variable '>' is used so command will not, need to shell
-    shell: touch > /temp/file2.txt
+    shell: touch > /tmp/file2.txt
     register: command_output_2
 
   - name: print bothe the outputs
