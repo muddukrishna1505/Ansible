@@ -12,7 +12,8 @@
   - name: Create user roboshop
     command: useradd roboshop
     when: user_output.rc != 0
-
+    
+  - name: print the user info
     debug:
       msg: "user status {{user_output}}"
 
