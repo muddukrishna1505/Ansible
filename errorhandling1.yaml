@@ -9,9 +9,10 @@
     register: user_output
     ignore_errors: yes
 
-    debug:
-      msg: "user status {{user_output}}"
-
   - name: Create user roboshop
     command: useradd roboshop
     when: user_output.rc != 0
+
+    debug:
+      msg: "user status {{user_output}}"
+
