@@ -7,7 +7,7 @@
   - name: check roboshop user exist or not
     command: id roboshop
     register: user_output
-    igonre_errors: yes
+    ignore_errors: yes
 
     debug:
       msg: "user status {{user_output}}"
