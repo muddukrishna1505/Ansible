@@ -6,3 +6,6 @@
   - name: create expense user
     user:
       name: krish # useradd expense
+  - name: printing the user info
+    debug:
+      msg: "{{ name }}"
